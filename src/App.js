@@ -1,28 +1,27 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { Helmet } from 'react-helmet';
+import Header from './components/common/header';
+import Routes from './routes';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <Helmet defaultTitle="Quercus">
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" />
+        </Helmet>
+        <Routes>
+          <div className="container-fluid">
+            <Header />
+            {this.props.children}
+          </div>
+        </Routes>
       </div>
     );
   }
 }
 
 export default App;
+
+//something is wrong with mui theme provider that shits out the whole thing
