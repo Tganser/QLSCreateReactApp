@@ -7,6 +7,7 @@ class AdminPage extends React.Component {
       <div>
         <h1>Admin:</h1>
         <p> Jim Elleson, Tessa Ganser, etc </p>
+        <p> Jim Elleson, Tessa Ganser, etc </p><p> Jim Elleson, Tessa Ganser, etc </p><p> Jim Elleson, Tessa Ganser, etc </p><p> Jim Elleson, Tessa Ganser, etc </p><p> Jim Elleson, Tessa Ganser, etc </p><p> Jim Elleson, Tessa Ganser, etc </p>
       </div>
     );
   }
